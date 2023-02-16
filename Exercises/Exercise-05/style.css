@@ -1,0 +1,22 @@
+/*div{
+	width: 100vw;
+	height: 100vh;
+	background: black;
+}
+
+.blue{
+	width: 50%;
+	height: 50%;
+	background: blue;
+}
+
+#red{
+	width: 50%;
+	height: 50%;
+	background: red;
+}*/
+div.blue p{
+	color: blue;
+	font-family: sans-serif;
+	font-size: 180pt;
+}
