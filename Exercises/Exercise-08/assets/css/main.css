@@ -1,0 +1,348 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #DADADA;
+}
+
+
+/* if you want to change the background of your canvas, do it here */
+
+.canvas {
+	width: 900px;
+	height: 556px;
+	margin: 100px auto;
+	background: lightcoral;
+	position: relative;
+	border: solid black 5px;
+	z-index: -8;
+}
+
+
+.cat1 {
+    width: 230px; /* 宽度 */
+    height: 120px; /* 高度 */
+    background-color: lightgrey; /* 背景色 */
+    border-radius: 60px; /* 圆角大小 */
+    position: absolute;
+    top: 350px;
+    left: 175px;
+}
+
+.cat2 {
+    width: 220px; /* 宽度 */
+    height: 120px; /* 高度 */
+    background-color: lightgrey; /* 背景色 */
+    border-radius: 25px; /* 圆角大小 */
+    position: absolute;
+    top: 270px;
+    left: 100px;
+    transform: rotate(60deg);
+}
+
+.cat3-1 {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 20px solid black;
+  position: absolute;
+  top: 340px;
+  left: 368px;
+  transform: rotate(32deg);
+}
+
+.cat3-2 {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 20px solid black;
+  position: absolute;
+  top: 340px;
+  left: 273px;
+  transform: rotate(-32deg);
+}
+
+.cat3-3 {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 30px solid lightgrey;
+  position: absolute;
+  top: 460px;
+  left: 200px;
+  transform: rotate(180deg);
+}
+
+.cat3-4 {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 30px solid lightgrey;
+  position: absolute;
+  top: 460px;
+  left: 340px;
+  transform: rotate(180deg);
+}
+
+.eye {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    left: 140px;
+}
+
+.pupil {
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.left-eye {
+    position: fixed;
+    left: 460px;
+    top: 490px;
+    transform: translateY(-50%);
+}
+
+.right-eye {
+    position: fixed;
+    left: 520px;
+    top: 490px;
+    transform: translateY(-50%);
+}
+
+.nose {
+	width: 15px;
+    height: 15px;
+    background: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 400px;
+    left: 330px;
+}
+
+.candle1 {
+  position: absolute;
+  top: 270px;
+  left: 220px;
+  width: 130px;
+  height: 130px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+  z-index: -1;
+}
+
+.candle2 {
+  position: absolute;
+  top: 190px;
+  left: 330px;
+  width: 130px;
+  height: 130px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+  z-index: -1;
+}
+
+.candle3 {
+  position: absolute;
+  top: 290px;
+  left: 320px;
+  width: 130px;
+  height: 130px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+  z-index: -3;
+}
+
+.candle4 {
+  position: absolute;
+  top: 260px;
+  left: 390px;
+  width: 130px;
+  height: 130px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+  z-index: -4;
+}
+
+.candle5 {
+  position: absolute;
+  top: 190px;
+  left: 230px;
+  width: 130px;
+  height: 130px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+  z-index: -3;
+}
+
+.candle6 {
+  position: absolute;
+  top: 180px;
+  left: 170px;
+  width: 130px;
+  height: 130px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+  z-index: -5;
+}
+
+.candle7 {
+    width: 330px; /* 宽度 */
+    height: 70px; /* 高度 */
+    background-color: rgba(255, 255, 255, 0.8); /* 背景色 */
+    border-radius: 20px; /* 圆角大小 */
+    position: absolute;
+    top: 390px;
+    left: 175px;
+    z-index: -5;
+}
+
+.vase1 {
+  position: absolute;
+  top: 180px;
+  left: 470px;
+  width: 350px;
+  height: 350px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+/*  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);*/
+/*  z-index: -5;*/
+}
+
+.vase2 {
+	opacity: 0.6;
+	transform: rotate(90deg);
+	position: absolute;
+	top: 0px;
+	left: 530px;
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 180px solid white;
+	border-bottom: 250px solid white;
+}
+
+.vase3 {
+  position: absolute;
+  top: 20px;
+  left: 517px;
+  width: 255px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+  transform: rotate(11deg);
+  opacity: 0.6;
+}
+
+.dirt {
+	position: absolute;
+	top: 350px;
+	left: 480px;
+	width: 330px;
+	height: 165px;
+	background-color: red;
+	border-radius:0 0 165px 165px;
+	z-index: -1;
+}
+
+.grass-container {
+	position: absolute;
+	top: 200px;
+	left: 620px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 200px;
+}
+
+.grass {
+    width: 8px;
+    height: 160px;
+    background-color: green;
+    margin: 0 5px;
+    transform-origin: bottom;
+}
+
+.grass:nth-child(1) {
+    transform: skewX(20deg);
+}
+
+.grass:nth-child(2) {
+    height: 180px;
+}
+
+.grass:nth-child(3) {
+    transform: skewX(-20deg);
+}
+
+.cat-platform {
+	position: absolute;
+	top: 490px;
+	left: 150px;
+    width: 300px;
+    height: 50px;
+    background-color: blue;
+    z-index: -1;
+}
+
+@keyframes fire-animation {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.fire {
+	position: relative;
+	top: 160px;
+	left: 350px;
+    width: 20px;
+    height: 40px;
+    background-color: orange;
+    border-radius: 50% 50% 50% 0;
+    animation: fire-animation 0.5s infinite;
+    transform-origin: bottom center;
+}
+
+.in-fire {
+	position: absolute;
+    top: 10px;
+    left: 5px;
+    width: 10px;
+    height: 20px;
+    background-color: yellow;
+    border-radius: 50% 50% 50% 0;
+    animation: flame-animation 0.5s infinite;
+    transform-origin: bottom center;
+}
+
+
+/*.square{
+	width: 100px;
+	height: 100px;
+	background: blue;
+	position: absolute;
+	top: 100px;
+	left: 200px;
+}*/

@@ -15,6 +15,12 @@
 	height: 50%;
 	background: red;
 }*/
+body {
+  margin: 0;
+/*  height: 100vh;*/
+  background-image: linear-gradient(to bottom, #000000, #ffffff);
+}
+
 div.blue p{
 	color: blue;
 	font-family: sans-serif;
