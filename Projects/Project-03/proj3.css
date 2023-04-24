@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.container {
+    position: relative;
+    width: 800px;
+    height: 600px;
+    border: 1px solid black;
+}
+
+#moving-image {
+    position: absolute;
+    cursor: pointer;
+    width: 100px; 
+    height: 100px; 
+}
+
+#moving-image {
+  position: absolute;
+  left: 0;
+  cursor: pointer;
+  animation-timing-function: ease-out;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes move {
+  100% {
+    left: calc(100% - var(--image-width));
+  }
+}
