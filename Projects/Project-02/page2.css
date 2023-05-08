@@ -1,0 +1,19 @@
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.text img {
+    width: 80%;
+    margin: 0;
+}
+.text p {
+    width: 60%;
+    height: auto;
+    margin: 0;
+    font-size: 30px;
+    
+}

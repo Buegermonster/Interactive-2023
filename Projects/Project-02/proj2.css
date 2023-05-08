@@ -37,6 +37,10 @@ body, html {
     align-items: center;
 }
 
+a {
+    text-decoration: none;
+}
+
 .text p {
     width: 60%;
     margin: 0;
